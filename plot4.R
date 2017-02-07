@@ -22,7 +22,7 @@ energy$Sub_metering_3 <- as.numeric(energy$Sub_metering_3)
 
 feb2007 <- subset(energy, Date == "2007-02-01" | Date == "2007-02-02")
 
-png("plot4.png")
+png("plot4.png", width = 480, height = 480)
 
 par(mfrow = c(2,2))
 

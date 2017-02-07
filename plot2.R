@@ -22,7 +22,7 @@ energy$Sub_metering_3 <- as.numeric(energy$Sub_metering_3)
 
 feb2007 <- subset(energy, Date == "2007-02-01" | Date == "2007-02-02")
 
-png("plot2.png")
+png("plot2.png", width = 480, height = 480)
 
 with(feb2007, plot(
       x = as.POSIXlt(strftime(paste(feb2007$Date,feb2007$Time),"%Y-%m-%d %H:%M:%S")),

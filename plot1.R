@@ -23,7 +23,7 @@ energy$Sub_metering_3 <- as.numeric(energy$Sub_metering_3)
 
 feb2007 <- subset(energy, Date == "2007-02-01" | Date == "2007-02-02")
 
-png("plot1.png")
+png("plot1.png", width = 480, height = 480)
 
 with(feb2007, hist(Global_active_power, breaks = 12, 
                    xlab = "Global Active Power (kilowatts)", 
